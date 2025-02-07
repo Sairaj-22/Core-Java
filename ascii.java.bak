@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+class ascii 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter a character : ");
+		char ch = sc.next().charAt(0);
+		
+		String op = (ch>='A' && ch<="Z" || ch>='a' && ch<='z')?(ch>='A' && ch<="Z")?(ch+"is a uppercase"):(ch+"is lower case"):(ch>='0' && ch<'9')?(ch +"is a digit"):(ch+"chis Special character");
+		
+		System.out.print(op);
+	}
+}

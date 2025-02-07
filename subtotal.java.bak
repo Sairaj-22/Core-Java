@@ -1,0 +1,11 @@
+class subtotal
+{
+	public static void main(String[] args) 
+	{
+		
+		
+		float enter = 10;
+		float subtotal = 10*(15/100);
+		
+	}
+}

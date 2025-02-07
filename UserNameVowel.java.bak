@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class UserName {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter name: ");
+        
+        String name = sc.next().toUpperCase(); // Convert input to uppercase
+        System.out.print("Vowels in the name: ");
+        
+        for (int i = 0; i < name.length(); i++) {
+            char ch = name.charAt(i);
+            if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+                System.out.print(ch + " "); // Print vowels
+            }
+        }
+        
+        System.out.println(); // Move to the next line after loop
+        sc.close(); // Close Scanner
+    }
+}
