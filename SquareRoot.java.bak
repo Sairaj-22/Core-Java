@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class SquareRoot 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number: ");
+		
+		boolean flag = false;
+		int num = sc.nextInt();
+		for (int i=1;i<num ;i++)
+		{
+			if(i*i==num){
+				
+				flag = true;
+				System.out.print("It is perfect Square root");
+			}
+			if(i*i>num)
+				break;
+		}
+		if(!flag)
+			System.out.println(num +"is a perfect Square");
+	}
+}
