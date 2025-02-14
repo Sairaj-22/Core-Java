@@ -1,0 +1,11 @@
+public class SeriesProgram2 {
+    public static void main(String[] args) {
+        int terms = 6; // Number of terms in the series
+        int term = 1; // First term of the series
+        
+        for (int n = 1; n <= terms; n++) {
+            System.out.print(term + " ");
+            term = term * n + 1; // Apply the formula
+        }
+    }
+}
